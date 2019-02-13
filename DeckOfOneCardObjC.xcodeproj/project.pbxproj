@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		3FAD44B22213658C00CF52C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD44B12213658C00CF52C5 /* AppDelegate.m */; };
-		3FAD44B52213658C00CF52C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD44B42213658C00CF52C5 /* ViewController.m */; };
 		3FAD44B82213658C00CF52C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD44B62213658C00CF52C5 /* Main.storyboard */; };
 		3FAD44BA2213658F00CF52C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD44B92213658F00CF52C5 /* Assets.xcassets */; };
 		3FAD44BD2213658F00CF52C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD44BB2213658F00CF52C5 /* LaunchScreen.storyboard */; };
 		3FAD44C02213658F00CF52C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD44BF2213658F00CF52C5 /* main.m */; };
+		3FAD44C82213675200CF52C5 /* DVMCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD44C72213675200CF52C5 /* DVMCard.m */; };
+		3FAD44CF2213705A00CF52C5 /* DVMCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD44CE2213705A00CF52C5 /* DVMCardController.m */; };
+		3FAD44D422137F3E00CF52C5 /* DVMCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD44D322137F3E00CF52C5 /* DVMCardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FAD44AD2213658C00CF52C5 /* DeckOfOneCardObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCardObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAD44B02213658C00CF52C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3FAD44B12213658C00CF52C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3FAD44B32213658C00CF52C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3FAD44B42213658C00CF52C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3FAD44B72213658C00CF52C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FAD44B92213658F00CF52C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FAD44BC2213658F00CF52C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FAD44BE2213658F00CF52C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FAD44BF2213658F00CF52C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FAD44C62213675200CF52C5 /* DVMCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCard.h; sourceTree = "<group>"; };
+		3FAD44C72213675200CF52C5 /* DVMCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCard.m; sourceTree = "<group>"; };
+		3FAD44CD2213705A00CF52C5 /* DVMCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCardController.h; sourceTree = "<group>"; };
+		3FAD44CE2213705A00CF52C5 /* DVMCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCardController.m; sourceTree = "<group>"; };
+		3FAD44D222137F3E00CF52C5 /* DVMCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCardViewController.h; sourceTree = "<group>"; };
+		3FAD44D322137F3E00CF52C5 /* DVMCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,69 @@
 		3FAD44AF2213658C00CF52C5 /* DeckOfOneCardObjC */ = {
 			isa = PBXGroup;
 			children = (
+				3FAD44CA2213676100CF52C5 /* Model */,
+				3FAD44D12213706F00CF52C5 /* Controllers */,
+				3FAD44C92213675A00CF52C5 /* Storyboards */,
+				3FAD44CC2213677B00CF52C5 /* Resources */,
+			);
+			path = DeckOfOneCardObjC;
+			sourceTree = "<group>";
+		};
+		3FAD44C92213675A00CF52C5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3FAD44B62213658C00CF52C5 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3FAD44CA2213676100CF52C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FAD44C62213675200CF52C5 /* DVMCard.h */,
+				3FAD44C72213675200CF52C5 /* DVMCard.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FAD44CB2213677000CF52C5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FAD44D222137F3E00CF52C5 /* DVMCardViewController.h */,
+				3FAD44D322137F3E00CF52C5 /* DVMCardViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3FAD44CC2213677B00CF52C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				3FAD44B02213658C00CF52C5 /* AppDelegate.h */,
 				3FAD44B12213658C00CF52C5 /* AppDelegate.m */,
-				3FAD44B32213658C00CF52C5 /* ViewController.h */,
-				3FAD44B42213658C00CF52C5 /* ViewController.m */,
-				3FAD44B62213658C00CF52C5 /* Main.storyboard */,
 				3FAD44B92213658F00CF52C5 /* Assets.xcassets */,
 				3FAD44BB2213658F00CF52C5 /* LaunchScreen.storyboard */,
 				3FAD44BE2213658F00CF52C5 /* Info.plist */,
 				3FAD44BF2213658F00CF52C5 /* main.m */,
 			);
-			path = DeckOfOneCardObjC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3FAD44D02213705E00CF52C5 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FAD44CD2213705A00CF52C5 /* DVMCardController.h */,
+				3FAD44CE2213705A00CF52C5 /* DVMCardController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		3FAD44D12213706F00CF52C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FAD44D02213705E00CF52C5 /* Model Controllers */,
+				3FAD44CB2213677000CF52C5 /* View Controllers */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +155,7 @@
 		3FAD44A52213658C00CF52C5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DVM;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = XMS_JZhan;
 				TargetAttributes = {
@@ -141,7 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FAD44B52213658C00CF52C5 /* ViewController.m in Sources */,
+				3FAD44D422137F3E00CF52C5 /* DVMCardViewController.m in Sources */,
+				3FAD44CF2213705A00CF52C5 /* DVMCardController.m in Sources */,
+				3FAD44C82213675200CF52C5 /* DVMCard.m in Sources */,
 				3FAD44C02213658F00CF52C5 /* main.m in Sources */,
 				3FAD44B22213658C00CF52C5 /* AppDelegate.m in Sources */,
 			);
@@ -286,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfOneCardObjC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCardObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfOneCardObjC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfOneCardObjC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
